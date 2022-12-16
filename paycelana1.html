@@ -1,0 +1,62 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Tranksasi</title>
+  </head>
+  <body>
+    <!-- bagian untuk menulis coding java script -->
+    <script>
+        
+        // menampilkan pop up untuk memasukan jumlah pesanan
+        var jml = prompt("Masukkan Jumlah Pesanan :  ");
+        // rumus untuk menghitung jumlah pesanan dikali harga 
+        var jumlah =   jml * 35000;
+        // jika produk yang dibeli lebih dari sama dengan 10 maka proses pembayaran akan berlanjut
+        if (jml >= 10 ) {
+          // menampikan tulisan di halaman web
+            document.write(`Produk yang anda pesan adalah  : <b>Celana Panjang </b><br>`);
+            // menampilkan jumlah barang yang diinputkan pada variabel jml di halaman web
+            document.write(`Jumlah pesanan anda : <b>${jml}</b><br>`);
+             // menampilkan total harga yang sudah dihitung pada variabel jumlah di halaman web
+            document.write(`Total harga : Rp <b>${jumlah}</b>`);
+            
+        }
+        // jika jumlah produk yang dipesan tidak sesuai makan proses pembayaran gagal
+        else   {
+          // menampikan pop up berupa tulisan saja dan tidak ada kolom input
+            alert('Minimal pembelian tidak sesuai');
+            // mengelinkan tombol "ok" yang ditekan ke halaman celana.html
+            document.location.href = "celana.html";
+            
+            
+        } 
+        document.write("<p> Terima Kasih dah mampir <p>");
+            document.write("<p> Untuk melanjutkan tranksasi silahkan ss halaman ini dan kirim wa di link di bawah ini <p>");
+            document.write("<a href= 'http://wa.me/62895322086025'>Link WA</a>");
+    
+    
+    </script>
+      
+    
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- mengelink kan halaman ini agar dapat terhubung dengan Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- tag style berfungsi sebagai wadah untuk css  -->
+    <style>
+        img{
+            height: 500px;
+            width: 750px;
+        }
+        button{
+            color: black;
+        }
+
+ .carousel-caption {
+	bottom: 240px;
+	z-index: 2;
+}
+.carousel-caption h5 {
+	font-weight: 700;
+	font-size: 28px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+}
+.carousel-caption p {
+	margin: auto;
+	font-size: 18px;
+	line-height: 1, 9;
+}
+.carousel-inner:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: 1;
+}
+.w-100 {
+	height: 100vh;
+}
+a:hover{
+  background-color: crimson;
+
+  
+    transition: .3s ease-in-out;
+    transition-delay: .1s;
+    border-radius: 8px;
+}
+    </style>
+    <title>Nojob Shop</title>
+  </head>
+  <body>
+
+     <!-- navbar yang berufngsui sebagai wadah beberapa link -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold fs-4" href="#"><span class="text-primary">NOJ</span>SHOP</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <!-- bagian untuk melink kan halaman index ke about.html -->
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="kontak.html">Contact Me</a>
+              </li>
+              <!-- Menu/bagian navbar untuk membuat link yang bisa turun kebawah / dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Shirt </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="kemeja.html">Kemeja</a></li>
+                  <li><a class="dropdown-item" href="kaos.html">Kaos</a></li>
+                  <li><a class="dropdown-item" href="hoodie.html">Hoodie</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="celana.html">Pants</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="socks.html">Socks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="topi.html">Topi</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="kupon.html">Bundle</a>
+                </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+
+      <!-- Carousel befungsi untuk menampikan gambar yang bisa bergerak dari kiri ke kanan atau sebaliknya -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <!-- untuk menampilkan garis indikator di bagian bawah carousel dan mengetauhi kita ada di slide berapa-->
+		<div class="carousel-indicators">
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+				aria-current="true" aria-label="Slide 1"></button>
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+				aria-label="Slide 2"></button>
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+				aria-label="Slide 3"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+				aria-label="Slide 4"></button>
+		</div>
+    <!-- wadah untuk menyimpan dan  menampilkan komponen apa saja yang ada di dalam carousel -->
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+        <!-- Menampilkan gambar kaos kaki dengan display block , ukuran lebar nya 100 -->
+				<img src="kaos kaki.png" class="d-block w-100" alt="...">
+				<div class="carousel-caption">
+					<h5>Socks</h5>
+					<p>Banyak pilihan jam tangan yang tersedia dan bermacam-macam untuk pria dan wanita.</p>
+          <!-- link yang berbentuk tombol untuk mengelink kan ke halaman socks.html -->
+					<p><a href="socks.html" class="btn btn-primary mt-3">Belanja</a></p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="topi.jpg" class="d-block w-100" alt="...">
+				<div class="carousel-caption">
+					<h5>Topi</h5>
+					<p>Banyak pilihan produk topi yang bisa dipesan secara grosir.
+          </p>
+					<p><a href="topi.html" class="btn btn-primary mt-3">Belanja</a></p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="baju.webp" class="d-block w-100" alt="...">
+				<div class="carousel-caption">
+					<h5>Clothes</h5>
+					<p>Banyak pilihan kemeja untuk semua umur dan semua gender yang menarik dari segi desain
+						tidak hanya itu untuk kemeja ada diskon 10%.</p>
+					<p><a href="kemeja.html" class="btn btn-primary mt-3">Belanja</a></p>
+				</div>
+			</div>
+      <div class="carousel-item">
+				<img src="celana.jpg" class="d-block w-100" alt="...">
+				<div class="carousel-caption">
+					<h5>Celana</h5>
+					<p>Banyak pilihan celana yang bisa dipesan secara grosir.</p>
+					<p><a href="celana.html" class="btn btn-primary mt-3">Belanja</a></p>
+				</div>
+			</div>
+		</div>
+    <!-- menampilan tombol indikator untuk next dan prev di bagian kiri dan kanan carousel -->
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+			data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+			data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		</button>
+	</div>
+      <!-- Emd carousel -->
+
+      
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
